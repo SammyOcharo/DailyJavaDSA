@@ -9,7 +9,7 @@ public class IsStringInOrder {
     //isInOrder("edabit") ➞ false
     //
     //isInOrder("123") ➞ true
-
+    //isInOrder("123") -> false
 
     public static boolean isInOrder(String str){
         for(int i=0; i < str.length() -1; i++){
@@ -24,6 +24,7 @@ public class IsStringInOrder {
         System.out.println(isInOrder("abc"));
         System.out.println(isInOrder("edabit"));
         System.out.println(isInOrder("123"));
+        System.out.println(isInOrder("125"));
         System.out.println(isInOrder("xyzz"));
     }
 }
