@@ -16,14 +16,14 @@ public class RecussionSumArray {
     public static int SumArray(int[] arr){
 
 
-        return sumArrayHelper(arr, arr.length-1);
+        return sumArrayHelper(arr, arr.length);
     }
 
     private static int sumArrayHelper(int[] arr, int index) {
         if(index == 0){
             return 0;
         }else{
-            return arr[index] + sumArrayHelper(arr, index-1);
+            return arr[index-1] + sumArrayHelper(arr, index-1);
         }
     }
 }
