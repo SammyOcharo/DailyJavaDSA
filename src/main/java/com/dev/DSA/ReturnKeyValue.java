@@ -1,7 +1,9 @@
 package com.dev.DSA;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class ReturnKeyValue {
     //Return the Objects Keys and Values
@@ -19,7 +21,13 @@ public class ReturnKeyValue {
     //➞ ["true", "false", "undefined"]
 
     public static List<String> getValues(Map<String, String> map){
+        TreeMap<String, String> sortedMap = new TreeMap<>(map);
+        List<String> values = new ArrayList<>();
+        for(Map.Entry<String, String> entry: sortedMap.entrySet()){
+            values.add(entry.getValue());
+        }
 
+        return values;
     }
 
 
