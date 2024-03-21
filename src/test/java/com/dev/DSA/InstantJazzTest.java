@@ -19,8 +19,12 @@ class InstantJazzTest {
         String [] expected2 = {};
         String [] given2 = {};
 
+        String [] expected3 = {"F7", "E7", "b6", "Ab7", "Gm7", "7"};
+        String [] given3 = {"F7", "E7", "A7", "Ab7", "Gm7", "C7"};
+
         assertEquals(Arrays.toString(expected), Arrays.toString(InstantJazz.jazzify(given)));
         assertNotEquals(Arrays.toString(expected1), Arrays.toString(InstantJazz.jazzify(given1)));
         assertEquals(Arrays.toString(expected2), Arrays.toString(InstantJazz.jazzify(given2)));
+        assertNotEquals(Arrays.toString(expected3), Arrays.toString(InstantJazz.jazzify(given3)));
     }
 }
