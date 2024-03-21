@@ -9,6 +9,7 @@ class IsStringInOrderTest {
     @Test
     public void testIsInOrder() {
         assertFalse(IsStringInOrder.isInOrder("apc"));    // Expected: true
+        assertFalse(IsStringInOrder.isInOrder("azc"));
         assertTrue(IsStringInOrder.isInOrder("abc")); // Expected: false
         assertTrue(IsStringInOrder.isInOrder("123"));    // Expected: true
         assertTrue(IsStringInOrder.isInOrder("789"));   // Expected: false
