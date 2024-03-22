@@ -8,8 +8,6 @@ public class ReverseStringCase {
     //reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY"
     //
     //reverseCase("MANY THANKS") ➞ "many thanks"
-    //
-    //reverseCase("sPoNtAnEoUs") ➞ "SpOnTaNeOuS"
 
     public static String reverseCase(String word){
 
