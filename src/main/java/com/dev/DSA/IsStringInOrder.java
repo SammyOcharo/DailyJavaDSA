@@ -19,12 +19,4 @@ public class IsStringInOrder {
         }
         return true;
     }
-    public static void main(String[] args){
-
-        System.out.println(isInOrder("abc"));
-        System.out.println(isInOrder("edabit"));
-        System.out.println(isInOrder("123"));
-        System.out.println(isInOrder("125"));
-        System.out.println(isInOrder("xyzz"));
-    }
 }
