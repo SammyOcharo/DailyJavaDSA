@@ -11,5 +11,7 @@ class PentagonalNumberTest {
 
         assertEquals(16, PentagonalNumber.pentagonal(3));
         assertEquals(141, PentagonalNumber.pentagonal(8));
+        assertNotEquals(1854, PentagonalNumber.pentagonal(52));
+
     }
 }
