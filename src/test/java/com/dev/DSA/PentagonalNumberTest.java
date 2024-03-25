@@ -13,6 +13,7 @@ class PentagonalNumberTest {
         assertEquals(141, PentagonalNumber.pentagonal(8));
         assertNotEquals(1854, PentagonalNumber.pentagonal(52));
         assertNotEquals(1754, PentagonalNumber.pentagonal(47));
+        assertEquals(6, PentagonalNumber.pentagonal(2));
 
     }
 }
