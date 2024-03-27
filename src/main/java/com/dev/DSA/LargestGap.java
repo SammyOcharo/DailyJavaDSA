@@ -1,6 +1,7 @@
 package com.dev.DSA;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class LargestGap {
     //Largest Gap
@@ -31,5 +32,14 @@ public class LargestGap {
         }
 
         return "largest gap in the array is between " + lowerBound + " and " + upperBound + " which is " + (upperBound - lowerBound) + ".";
+    }
+
+    //using streams
+    public static int largestGapStreamsOption(int[] arr) {
+        Arrays.sort(arr);
+        return IntStream.range(0, arr.length - 1)
+                .map(i -> arr[i + 1] - arr[i])
+                .max()
+                .orElse(Integer.MIN_VALUE);
     }
 }
