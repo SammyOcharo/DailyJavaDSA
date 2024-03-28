@@ -10,5 +10,6 @@ class WordSorterTest {
     void sortByLength() {
 
         assertEquals("my Hello friend", WordSorter.sortByLength("Hello my friend"));
+        assertEquals("a day Have wonderful", WordSorter.sortByLength("Have a wonderful day"));
     }
 }
