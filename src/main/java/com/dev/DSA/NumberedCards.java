@@ -29,13 +29,11 @@ public class NumberedCards {
 
         int number = Integer.parseInt(String.valueOf(last) + String.valueOf(secondLast));
 
-        System.out.println(number);
 
         int secondArraySecondLast = arr2[arr2.length -2];
         int secondArrayLast = arr2[arr2.length -1];
 
         int number2 = Integer.parseInt(String.valueOf(secondArrayLast) + String.valueOf(secondArraySecondLast));
-        System.out.println(number2);
 
         return number > number2;
     }

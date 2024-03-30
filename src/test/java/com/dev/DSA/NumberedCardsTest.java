@@ -12,5 +12,6 @@ class NumberedCardsTest {
         int[] arr1 = {2, 5, 2, 6, 9};
         int[] arr2 = {3, 7, 3, 1, 2};
         assertTrue(NumberedCards.winRound(arr1, arr2));
+        assertFalse(NumberedCards.winRound(arr1, arr1));
     }
 }
