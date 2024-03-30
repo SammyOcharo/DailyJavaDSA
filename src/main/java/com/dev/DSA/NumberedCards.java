@@ -21,8 +21,12 @@ public class NumberedCards {
     //winRound([4, 3, 4, 4, 5], [3, 2, 5, 4, 1]) ➞ false
 
     public static boolean winRound(int[] arr1, int[] arr2){
+        if(arr1.length == 0 || arr2.length == 0){
+            return false;
+        }
         Arrays.sort(arr1);
         Arrays.sort(arr2);
+
 
         int secondLast = arr1[arr1.length -2];
         int last = arr1[arr1.length -1];
