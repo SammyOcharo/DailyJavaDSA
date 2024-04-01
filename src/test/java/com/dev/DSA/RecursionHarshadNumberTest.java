@@ -11,6 +11,7 @@ class RecursionHarshadNumberTest {
         assertFalse(RecursionHarshadNumber.isDivisible(75));
         assertTrue(RecursionHarshadNumber.isDivisible(481));
         assertFalse(RecursionHarshadNumber.isDivisible(981));
+        assertFalse(RecursionHarshadNumber.isDivisible(458781));
     }
 
     @Test
