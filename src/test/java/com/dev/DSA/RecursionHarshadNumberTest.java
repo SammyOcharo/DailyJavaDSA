@@ -16,5 +16,7 @@ class RecursionHarshadNumberTest {
     void isHarshad() {
         assertEquals(12, RecursionHarshadNumber.isHarshad(75));
         assertEquals(13, RecursionHarshadNumber.isHarshad(481));
+        assertNotEquals(20, RecursionHarshadNumber.isHarshad(481));
+        assertNotEquals(22, RecursionHarshadNumber.isHarshad(481));
     }
 }
