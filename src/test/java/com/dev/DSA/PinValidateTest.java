@@ -14,5 +14,6 @@ class PinValidateTest {
         assertTrue(PinValidate.validate("900876"));
         assertFalse(PinValidate.validate("uhuhuh"));
         assertTrue(PinValidate.validate("1317"));
+        assertFalse(PinValidate.validate("uhsgefuhuh"));
     }
 }
