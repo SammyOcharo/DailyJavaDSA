@@ -9,5 +9,6 @@ class UnmixStringsTest {
     @Test
     void unmix() {
         assertEquals("This is a mixed up string.", UnmixStrings.unmix("hTsii  s aimex dpus rtni.g"));
+        assertNotEquals("This is a mixed up string..", UnmixStrings.unmix("hTsii  s aimex dpus rtni.g"));
     }
 }
