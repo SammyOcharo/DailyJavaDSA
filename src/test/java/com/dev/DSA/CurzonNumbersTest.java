@@ -9,5 +9,6 @@ class CurzonNumbersTest {
     @Test
     void isCurzon() {
         assertTrue(CurzonNumbers.isCurzon(5));
+        assertFalse(CurzonNumbers.isCurzon(8));
     }
 }
