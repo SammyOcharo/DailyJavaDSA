@@ -11,5 +11,6 @@ class CurzonNumbersTest {
         assertTrue(CurzonNumbers.isCurzon(5));
         assertFalse(CurzonNumbers.isCurzon(8));
         assertFalse(CurzonNumbers.isCurzon(10));
+        assertFalse(CurzonNumbers.isCurzon(17));
     }
 }
