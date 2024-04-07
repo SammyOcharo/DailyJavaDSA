@@ -10,5 +10,6 @@ class PrimeNumbersTest {
     void primeNumbers() {
         assertEquals(4, PrimeNumbers.primeNumbers(10));
         assertEquals(8, PrimeNumbers.primeNumbers(20));
+        assertEquals(10, PrimeNumbers.primeNumbers(30));
     }
 }
