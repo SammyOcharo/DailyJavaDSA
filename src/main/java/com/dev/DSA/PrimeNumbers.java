@@ -14,11 +14,25 @@ public class PrimeNumbers {
     //primeNumbers(30) ➞ 10
     //// 2, 3, 5, 7, 11, 13, 17, 19, 23 and 29
 
+
+    public static boolean isPrime(int number){
+
+        if(number <= 1){
+            return false;
+        }
+        for(int i=2; i<=Math.sqrt(number); i++){
+            if(number % i == 0){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     public static int primeNumbers(int number){
         int primeCount = 0;
         for(int i=2; i <= number; i++){
-            if((i % 2 != 0) && (Math.sqrt(i) != 0)){
-                System.out.println(i);
+            if(isPrime(i)){
                 primeCount +=1;
             }
         }
