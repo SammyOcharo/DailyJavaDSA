@@ -9,5 +9,6 @@ class PrimeNumbersTest {
     @Test
     void primeNumbers() {
         assertEquals(4, PrimeNumbers.primeNumbers(10));
+        assertEquals(8, PrimeNumbers.primeNumbers(20));
     }
 }
