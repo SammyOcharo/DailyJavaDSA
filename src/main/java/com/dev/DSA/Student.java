@@ -57,5 +57,13 @@ public class Student {
                 .orElse(0.0);
 
         System.out.println("Average age of students enrolled in Mathematics: " + averageAge);
+
+        double averageAgeParallel = students
+                .parallelStream()
+                .mapToInt(Student::getAge)
+                .average()
+                .orElse(0.00);
+
+        System.out.println("Average age in parallel: " + averageAgeParallel);
     }
 }
