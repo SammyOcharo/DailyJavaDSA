@@ -12,5 +12,6 @@ class PythagoreanTripletTest {
         assertFalse(PythagoreanTriplet.tripletFinder(1,2,3));
         assertTrue(PythagoreanTriplet.tripletFinder(80,48,64));
         assertTrue(PythagoreanTriplet.tripletFinder(80, 48, 64));
+        assertTrue(PythagoreanTriplet.tripletFinder(72, 54, 90));
     }
 }
