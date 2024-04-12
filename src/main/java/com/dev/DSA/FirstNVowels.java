@@ -35,4 +35,8 @@ public class FirstNVowels {
             return "";
         }
     }
+
+    public static void main(String[] args){
+        System.out.println(FirstNVowels.firstNVowels("major league", 5));
+    }
 }
