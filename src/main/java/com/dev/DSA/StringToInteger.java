@@ -57,7 +57,7 @@ public class StringToInteger {
     //The parsed integer is 4193.
     //Since 4193 is in the range [-231, 231 - 1], the final result is 4193.
 
-    public int myAtoi(String s) {
+    public static int myAtoi(String s) {
         // Remove leading whitespaces
         s = s.strip();
 
