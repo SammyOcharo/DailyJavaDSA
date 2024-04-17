@@ -41,38 +41,35 @@ public class IntegerToRoman {
     //Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
     public static String intToRoman(int number){
-        Map<Character, Integer> symbolValueMap = new HashMap<>();
-        symbolValueMap.put('I', 1);
-        symbolValueMap.put('V', 5);
-        symbolValueMap.put('X', 10);
-        symbolValueMap.put('L', 50);
-        symbolValueMap.put('C', 100);
-        symbolValueMap.put('D', 500);
-        symbolValueMap.put('M', 1000);
-
-        System.out.println("Number: " + number);
-        System.out.println("Denominations:");
+        Map<String, Integer> symbolValueMap = new HashMap<>();
+        symbolValueMap.put(String.valueOf('I'), 1);
+        symbolValueMap.put("IV", 4);
+        symbolValueMap.put(String.valueOf('V'), 5);
+        symbolValueMap.put("IX", 9);
+        symbolValueMap.put(String.valueOf('X'), 10);
+        symbolValueMap.put("XL", 40);
+        symbolValueMap.put(String.valueOf('L'), 50);
+        symbolValueMap.put("XC", 90);
+        symbolValueMap.put(String.valueOf('C'), 100);
+        symbolValueMap.put("CD", 400);
+        symbolValueMap.put(String.valueOf('D'), 500);
+        symbolValueMap.put("CM", 900);
+        symbolValueMap.put(String.valueOf('M'), 1000);
 
         // Create a list of symbols in descending order based on their values
-        List<Character> symbols = new ArrayList<>(symbolValueMap.keySet());
+        List<String> symbols = new ArrayList<>(symbolValueMap.keySet());
         symbols.sort(Comparator.comparingInt(symbolValueMap::get).reversed());
-        System.out.println(symbols);
 
         StringBuilder roman = new StringBuilder();
 
-        for(char symbol: symbols){
-            System.out.println(symbol);
+        for(String symbol: symbols){
             int value = symbolValueMap.get(symbol);
-            System.out.println(value);
 
             while(number >= value){
                 roman.append(symbol);
                 number -= value;
             }
         }
-
-        System.out.println(roman);
-
         return roman.toString();
     }
 }
